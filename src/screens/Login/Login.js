@@ -1,17 +1,22 @@
 import React, { Component } from "react";
-import { View, Text, Button } from "react-native";
+import ScreenWrapper from "../../components/ScreenWrapper";
+import { Text, Button } from "react-native";
 
 class Login extends Component {
+  static navigationOptions = {
+    header: null
+  };
+
   login = () => {
     this.props.navigation.navigate("HomeStack");
   };
 
   render() {
     return (
-      <View>
+      <ScreenWrapper>
         <Text>Login screen</Text>
         <Button title="Login" onPress={this.login} />
-      </View>
+      </ScreenWrapper>
     );
   }
 }
