@@ -38,6 +38,8 @@
 		832341BD1AAA6AB300B99B32 /* libRCTText.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 832341B51AAA6A8300B99B32 /* libRCTText.a */; };
 		ADBDB9381DFEBF1600ED6528 /* libRCTBlob.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ADBDB9271DFEBF0700ED6528 /* libRCTBlob.a */; };
 		3487049DFC8145C4AFAD7A75 /* libRNGestureHandler.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AE54EA07579A4AACA517456F /* libRNGestureHandler.a */; };
+		B3D52455A9BB4343B34287FD /* GothamPro-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E2E23E1D11134DD0B03B1877 /* GothamPro-Bold.ttf */; };
+		D280CED7646140FD92549519 /* GothamPro.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C80AA4C67FFA46C4B2809DF8 /* GothamPro.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -345,6 +347,8 @@
 		ADBDB91F1DFEBF0600ED6528 /* RCTBlob.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTBlob.xcodeproj; path = "../node_modules/react-native/Libraries/Blob/RCTBlob.xcodeproj"; sourceTree = "<group>"; };
 		5E019E88079948C5A689A981 /* RNGestureHandler.xcodeproj */ = {isa = PBXFileReference; name = "RNGestureHandler.xcodeproj"; path = "../node_modules/react-native-gesture-handler/ios/RNGestureHandler.xcodeproj"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = wrapper.pb-project; explicitFileType = undefined; includeInIndex = 0; };
 		AE54EA07579A4AACA517456F /* libRNGestureHandler.a */ = {isa = PBXFileReference; name = "libRNGestureHandler.a"; path = "libRNGestureHandler.a"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = archive.ar; explicitFileType = undefined; includeInIndex = 0; };
+		E2E23E1D11134DD0B03B1877 /* GothamPro-Bold.ttf */ = {isa = PBXFileReference; name = "GothamPro-Bold.ttf"; path = "../src/assets/fonts/GothamPro-Bold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		C80AA4C67FFA46C4B2809DF8 /* GothamPro.ttf */ = {isa = PBXFileReference; name = "GothamPro.ttf"; path = "../src/assets/fonts/GothamPro.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -581,6 +585,7 @@
 				00E356EF1AD99517003FC87E /* learnReactNativeTests */,
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
+				61780E70660944C0A1A9B4DD /* Resources */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -606,6 +611,16 @@
 			);
 			name = Products;
 			sourceTree = "<group>";
+		};
+		61780E70660944C0A1A9B4DD /* Resources */ = {
+			isa = "PBXGroup";
+			children = (
+				E2E23E1D11134DD0B03B1877 /* GothamPro-Bold.ttf */,
+				C80AA4C67FFA46C4B2809DF8 /* GothamPro.ttf */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+			path = "";
 		};
 /* End PBXGroup section */
 
@@ -1053,6 +1068,8 @@
 			files = (
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
 				13B07FBD1A68108700A75B9A /* LaunchScreen.xib in Resources */,
+				B3D52455A9BB4343B34287FD /* GothamPro-Bold.ttf in Resources */,
+				D280CED7646140FD92549519 /* GothamPro.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

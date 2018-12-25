@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import ScreenWrapper from "../../components/ScreenWrapper";
+import FormWrapper from "../../components/FormWrapper";
 import { Text, Button } from "react-native";
 
 class Login extends Component {
@@ -14,8 +15,10 @@ class Login extends Component {
   render() {
     return (
       <ScreenWrapper>
-        <Text>Login screen</Text>
-        <Button title="Login" onPress={this.login} />
+        <FormWrapper>
+          <Text>Login screen</Text>
+          <Button title="Login" onPress={this.login} />
+        </FormWrapper>
       </ScreenWrapper>
     );
   }
