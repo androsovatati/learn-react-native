@@ -1,7 +1,8 @@
 import React, { Component } from "react";
 import ScreenWrapper from "../../components/ScreenWrapper";
 import FormWrapper from "../../components/FormWrapper";
-import { Text, Button } from "react-native";
+import Button from "../../components/Button";
+import { Text } from "react-native";
 
 class Home extends Component {
   static navigationOptions = {
@@ -17,7 +18,7 @@ class Home extends Component {
       <ScreenWrapper>
         <FormWrapper>
           <Text>Home screen</Text>
-          <Button title="Logout" onPress={this.logout} />
+          <Button text="Logout" onPress={this.logout} />
         </FormWrapper>
       </ScreenWrapper>
     );
