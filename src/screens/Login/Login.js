@@ -1,6 +1,9 @@
 import React, { Component } from "react";
 import ScreenWrapper from "../../components/ScreenWrapper";
 import FormWrapper from "../../components/FormWrapper";
+import FormField from "../../components/FormField";
+import FormTitle from "../../components/FormTitle";
+import Input from "../../components/Input";
 import Button from "../../components/Button";
 import { Text } from "react-native";
 
@@ -17,8 +20,16 @@ class Login extends Component {
     return (
       <ScreenWrapper>
         <FormWrapper>
-          <Text>Login screen</Text>
-          <Button text="Login" onPress={this.login} />
+          <FormTitle>Log in</FormTitle>
+          <FormField>
+            <Input />
+          </FormField>
+          <FormField>
+            <Input />
+          </FormField>
+          <FormField>
+            <Button text="Login" onPress={this.login} />
+          </FormField>
         </FormWrapper>
       </ScreenWrapper>
     );
