@@ -1,6 +1,6 @@
 import React from "react";
-import { Wrapper } from "./Input.styles";
+import { TextInput } from "./Input.styles";
 
-const Input = props => <Wrapper {...props} />;
+const Input = props => <TextInput {...props} />;
 
 export default Input;
