@@ -22,6 +22,7 @@ class Login extends Component {
   @observable password = "";
   @observable errorMessage = "";
   @observable isLoading = false;
+  @observable showForm = false;
 
   @computed
   get isEmailError() {
@@ -31,6 +32,10 @@ class Login extends Component {
   @computed
   get isPasswordError() {
     return !this.isEmailError && this.password.length < 4;
+  }
+
+  componentDidMount() {
+    this.showForm = true;
   }
 
   onEmailChange = value => {
@@ -73,14 +78,22 @@ class Login extends Component {
       this.errorMessage = response.error.message;
       return;
     }
+    this.showForm = false;
+  };
 
-    this.props.navigation.navigate("HomeStack");
+  onPoseComplete = pose => {
+    if (pose === "hidden") {
+      this.props.navigation.navigate("HomeStack");
+    }
   };
 
   render() {
     return (
       <ScreenWrapper>
-        <FormWrapper>
+        <FormWrapper
+          onPoseComplete={this.onPoseComplete}
+          pose={this.showForm ? "visible" : "hidden"}
+        >
           <FormTitle>Log in</FormTitle>
           <FormField marginSize={MEDIUM}>
             <Input
