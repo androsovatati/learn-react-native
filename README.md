@@ -5,8 +5,9 @@ The request will be successful for the account *user@example.com / mercdev*.
 
 ### Getting Started
 These instructions will get you a copy of the project up and running on your local machine.
+1. To setup environment please follow this link:
 ```
-1. To setup environment please follow this link: https://facebook.github.io/react-native/docs/getting-started
+https://facebook.github.io/react-native/docs/getting-started
 ```
 2. Clone the project
 ```
@@ -24,5 +25,4 @@ react-native run-ios
 ```
 
 ### Preview
-
-![](./preview.gif?raw=true)
+<img src="./preview.gif" width="300" />
