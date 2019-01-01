@@ -2,7 +2,10 @@ import React, { Component } from "react";
 import ScreenWrapper from "../../components/ScreenWrapper";
 import FormWrapper from "../../components/FormWrapper";
 import Button from "../../components/Button";
-import { Text } from "react-native";
+import UserAvatar from "../../components/UserAvatar";
+import FormTitle from "../../components/FormTitle";
+import FormField from "../../components/FormField";
+import { LARGE } from "../../components/FormField/FormField.styles";
 import Store from "../../store";
 
 class Home extends Component {
@@ -18,10 +21,13 @@ class Home extends Component {
     return (
       <ScreenWrapper>
         <FormWrapper>
-          <Text>Home screen</Text>
-          <Text>{Store.user.name}</Text>
-          <Text>{Store.user.photoUrl}</Text>
-          <Button text="Logout" onPress={this.logout} />
+          <UserAvatar photo={Store.user.photoUrl} />
+          <FormField>
+            <FormTitle>{Store.user.name}</FormTitle>
+          </FormField>
+          <FormField marginSize={LARGE}>
+            <Button text="Logout" onPress={this.logout} />
+          </FormField>
         </FormWrapper>
       </ScreenWrapper>
     );

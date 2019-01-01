@@ -6,5 +6,5 @@ export const LARGE = 40;
 
 export const Wrapper = styled.View`
   align-items: center;
-  margin-top: ${props => props.marginSize || 24}px;
+  margin-top: ${props => props.marginSize || SMALL}px;
 `;
