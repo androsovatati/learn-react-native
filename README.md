@@ -3,6 +3,9 @@
 Page with user authorization form.  
 The request will be successful for the account *user@example.com / mercdev*.  
 
+### Preview
+<img src="./preview.gif" width="300" />
+
 ### Getting Started
 These instructions will get you a copy of the project up and running on your local machine.
 1. To setup environment please follow this link:
@@ -23,6 +26,3 @@ yarn install
 react-native run-android
 react-native run-ios
 ```
-
-### Preview
-<img src="./preview.gif" width="300" />
